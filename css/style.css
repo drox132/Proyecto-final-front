@@ -2,5 +2,34 @@
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: aqua;
+}
+/*estilos del footer */
+.footer {
+    background-color: #494949;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .elementos {
+   
+    margin: 20px;
+    width: 25%;
+    align-items: center;
+  }
+  #tf   {
+      color: white;
+      text-align: center;
+      background-color: #494949;
+      width: 100%;
+  }
+.elementos a {
+    list-style: none;
+    color: white;
+
 }
