@@ -2,34 +2,57 @@
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-/*estilos del footer */
+/* variables*/
+:root {
+--facebook:#3b5999;
+--instagram:#e4405f;
+--twitter:#55acee;
+--youtube:#ff0000;
+}
+
+/*estilos del footer div padre */
 .footer {
     background-color: #494949;
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
-    color: white;
-    margin: 10px;
+    color: #ffffff;
     text-align: center;
 }
 .footer {
     display: flex;
     flex-direction: row;
   }
+  /* clase a los contenedores de clase elemnetos */
   .elementos {
-   
-    margin: 20px;
+   margin: 20px;
     width: 25%;
     align-items: center;
   }
+.elementos a {
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 20px;
+}
+/* clase al parrafo de derechos reservados*/
   #tf   {
-      color: white;
+      color: #ffffff;
       text-align: center;
       background-color: #494949;
       width: 100%;
   }
-.elementos a {
-    list-style: none;
-    color: white;
-
+  /*desenfoque*/
+  .footer :hover a{
+      filter: blur(2px);
+  }
+.footer a:hover {
+    transform: translateY(-3px) scale(1.5);
+    filter: none;
 }
+.footer .facebook:hover{
+    background: var(--facebook);
+}
+
+
