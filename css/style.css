@@ -48,10 +48,10 @@
       width: 100%;
   }
   /*desenfoque*/
-  .footer:hover a{
+  .elementos:hover a{
       filter: blur(2px);
   }
-.footer a:hover {
+.elementos a:hover {
     transform: translateY(-3px) scale(1.5);
     filter: none;
 } 
@@ -86,3 +86,9 @@
     filter: none;
     transform: none;
 }
+/*estilos de la imagen*/
+div .logo {
+    width: 150px;
+    height: 150px;
+}
+/*Estilos de la columna 3 contacto */
