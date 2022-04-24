@@ -119,3 +119,235 @@ ol li {
     font-size: 18px;
     text-align: left;
 }
+    /* background-color: aqua; */
+
+
+/* ESTA ES LA SECION DE ESTILO DE LOS MEDIOS DE PAGO */
+
+/* AQUI SE ESTA DANDO ESTILO AL CONTENEDOR PADRE DE LOS METODOS DE PAGOS */
+.metodoPago{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(241, 241, 221);
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(196, 196, 189);
+}
+
+/* AQUI SE ESTA DANDO ESTILO AL HIJO METODO DE PAGO */
+section div{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 10px;
+}
+/* */
+section div i{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 1px solid rgb(196, 196, 189);
+
+}
+/* AQUI SE ESTA DANDO ESTILO A LOS ICONOS DE ANCLE*/
+.metodo{
+    font-size: 300%;
+}
+
+/* AQUI SE ESTA DANDO ESTILO AL INDEX TDC */
+.pago{
+    position: relative;
+    padding: 5px;
+    background-color: gray;
+}
+
+.contenedortdc{
+    background-color: #fff;
+    max-width: 80%;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 4px 5px black;
+
+}
+.img-credit{
+    width: 100px;
+    height: 60px;
+    padding: 20px;
+
+}
+div p{
+    color: rgb(130, 131, 133);
+    padding: 5px;
+}
+div a{
+    text-decoration: none;
+}
+#close{
+    float: right;
+    font-size: x-large;
+
+
+}
+
+/* AQUI SE ESTA DANDO ESTILO A LA SECCION DE TDD */
+
+.pago{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.contenedortdd{
+    background-color: #fff;
+    width: 70%;
+    height: 500px;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 4px 5px black;
+    overflow: scroll;
+}
+.itdd{
+    float: left;
+    margin: 15px;
+    padding: 15px;
+    font-size: x-large;
+}
+.img-debito{
+    margin: 10px;
+    padding: 5px;
+    width: 80px;
+    box-shadow: 4px 4px 4px 4px rgb(161, 161, 157);
+}
+.c-img-debito{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-efectivo{
+    margin: 20px;
+    padding: 10px;
+    width: 70px;
+}
+.img-elect{
+    width: 200px;
+    margin: 0 20px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+/* ESTA ES LA SECION DE ESTILO DE LOS MEDIOS DE PAGO */
+
+/* AQUI SE ESTA DANDO ESTILO AL CONTENEDOR PADRE DE LOS METODOS DE PAGOS */
+.metodoPago{
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+/* AQUI SE ESTA DANDO ESTILO AL HIJO METODO DE PAGO */
+section div{
+    display: flex;
+    align-items: center;
+    padding: 2px 2px;
+    margin: 2px;
+}
+div h2{
+    font-size: 80%;
+}
+/* */
+section div i{
+    padding: 5px;
+    border-radius: 30%;
+    margin-right: 10px;
+}
+/* AQUI SE ESTA DANDO ESTILO A LOS ICONOS DE ANCLE*/
+.metodo{
+    font-size: 100%;
+}
+
+/* AQUI SE ESTA DANDO ESTILO AL INDEX TDC */
+/* .pago{
+    position: relative;
+    padding: 5px;
+    background-color: gray;
+} */
+
+.contenedortdc{
+    background-color: #fff;
+    max-width: 70%;
+    height: 400px;
+    padding: 80px;
+    overflow: scroll;
+}
+.img-credit{
+    width: 80px;
+    height: 40px;
+    padding: 20px;
+}
+
+div p{
+    font-size: small;
+}
+
+}
+#close{
+    /* float: right; */
+    font-size: large;
+    margin-right: -30px;
+    margin-top: -30px;
+}
+
+/* AQUI SE ESTA DANDO ESTILO A LA SECCION DE TDD */
+
+.pago{
+    /* display: flex;
+    justify-content: center; */
+    align-content: center;
+}
+.contenedortdd{
+    /* background-color: #fff; */
+    /* width: 70%; */
+    height: 400px;
+    padding: 50px 20px;
+    /* border-radius: 25px; */
+    /* box-shadow: 5px 5px 4px 5px black; */
+    /* overflow: scroll; */
+}
+/* .itdd{
+    float: left;
+    margin: 15px;
+    padding: 15px;
+    font-size: x-large;
+} */
+.img-debito{
+    /* margin: 10px; */
+    padding: 5px;
+    width: 40px;
+    /* box-shadow: 4px 4px 4px 4px rgb(161, 161, 157); */
+}
+/* .c-img-debito{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.img-efectivo{
+    margin: 10px;
+    padding: 5px;
+    width: 50px;
+}
+.img-elect{
+    width: 80px;
+}
+.electronico{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
