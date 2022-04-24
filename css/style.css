@@ -2,8 +2,125 @@
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    /* background-color: aqua; */
+    box-sizing: border-box;
 }
+/* variables 
+:root {
+--facebook:#3b5999;
+--instagram:#e4405f;
+--twitter:#55acee;
+--youtube:#ff0000;
+}  */
+
+
+/*estilos del footer div padre */
+.footer {
+    background-color: #494949;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  /* clase a los contenedores de clase elemnetos */
+  .elementos {
+   margin: 10px;
+    width: auto;
+    align-items: center;
+  }
+.elementos a {
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* clase al parrafo de derechos reservados*/
+  #tf   {
+      color: #ffffff;
+      text-align: center;
+      background-color: #494949;
+      width: 100%;
+  }
+  /*desenfoque*/
+  .elementos:hover a{
+      filter: blur(2px);
+  }
+.elementos a:hover {
+    transform: translateY(-3px) scale(1.5);
+    filter: none;
+} 
+/*
+.footer .facebook:hover{
+    background: var(--facebook);
+}
+.footer .instagram:hover{
+    background: var(--instagram);
+}
+.footer .twitter:hover{
+    background: var(--twitter);
+}
+.footer .youtube:hover{
+    background: var(--youtube);
+}
+*/
+
+/* estilos de la columna quienes somos*/
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.col-1 p {
+    font-size: 12px;
+    text-align: justify; 
+    font-weight: bold;  
+}
+.footer:hover .col-1 a {
+    filter: none;
+    transform: none;
+}
+/*estilos de la imagen*/
+div .logo {
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+}
+/*Estilos de la columna 3 contacto */
+.col-3 p {
+font-size: 17px;
+}
+#contacto {
+    text-align: left;
+}
+.boton {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    background-color: #9999bd;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 90px;
+}
+.boton:hover{
+    color: red;
+}
+/*Estilos de la lista */
+ol {
+    list-style: none;
+}
+ol li {
+    font-size: 18px;
+    text-align: left;
+}
+    /* background-color: aqua; */
+
 
 /* ESTA ES LA SECION DE ESTILO DE LOS MEDIOS DE PAGO */
 
