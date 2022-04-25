@@ -243,10 +243,10 @@ div a{
 
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap:0px;
-    float:right;
+    grid-template-columns: repeat(auto-fill, minmax(14rem,1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:1rem;
+   
 }
 
 .card{
