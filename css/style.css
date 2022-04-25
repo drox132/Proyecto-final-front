@@ -232,6 +232,43 @@ div a{
     margin: 0 20px;
 }
 
+/*Seccion cards*/
+
+.seccionCards{
+    width:75%;
+    float:right;
+}
+
+/* Estilo cards*/
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:0px;
+    float:right;
+}
+
+.card{
+    border: 4px solid rgb(222, 9, 9);
+    padding:0;
+}
+
+.card:hover{
+    -webkit-box-shadow: 4px 6px 36px -4px rgba(26,29,71,1);
+    -moz-box-shadow: 4px 6px 36px -4px rgba(26,29,71,1);
+    box-shadow: 4px 6px 36px -4px rgba(26,29,71,1);
+}
+
+.cardImg{
+    width:10rem;
+    height:10rem;
+}
+
+.cardBody{
+    flex-direction: column;
+}
+
 
 
 
