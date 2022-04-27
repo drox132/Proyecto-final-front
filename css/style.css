@@ -119,6 +119,39 @@ ol li {
     font-size: 18px;
     text-align: left;
 }
+/*Haciendo responsive el footer */
+@media (max-width: 780px) {
+    .logo {
+        display:none;
+    }
+}
+@media (max-width: 780px) {
+    .elementos {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+@media (max-width: 780px) {
+    .col-1 {
+        flex-direction: column;
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+@media (max-width: 600px) {
+    #tf {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+
+
     /* background-color: aqua; */
 
 
