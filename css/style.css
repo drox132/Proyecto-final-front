@@ -126,14 +126,7 @@ ol li {
     }
 }
 @media (max-width: 780px) {
-    .elementos {
-        flex-direction: column;
-        text-align: left;
-    }
-}
-@media (max-width: 780px) {
     .col-1 {
-        flex-direction: column;
         display: none;
     }
 }
