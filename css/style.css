@@ -126,27 +126,30 @@ ol li {
     }
 }
 @media (max-width: 780px) {
-    .elementos {
-        flex-direction: column;
-        text-align: left;
-    }
-}
-@media (max-width: 780px) {
     .col-1 {
-        flex-direction: column;
         display: none;
     }
 }
 @media (max-width: 600px) {
     .footer {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
     }
 }
 @media (max-width: 600px) {
     #tf {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .iconos {
+       display: none;
+    }
+}
+@media (max-width: 600px) {
+    .lista {
+       display: none;
     }
 }
 
