@@ -353,10 +353,12 @@ div a{
 .cardImg{
     width:10rem;
     height:10rem;
+    margin:0 auto;
 }
 
 .cardBody{
     flex-direction: column;
+    text-align: center;
 }
 
 
