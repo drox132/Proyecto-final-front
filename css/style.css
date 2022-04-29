@@ -1,5 +1,59 @@
+/* *{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+                               /* SECCION ANAHI */
+
+  
+
+.categorias{
+    
+    /* border: solid 0.5px; */
+    width: 20%;
+}
+.subt{
+    height: 3em;
+    text-align: center;
+    font-weight: lighter;
+}
+#menu>li{
+    padding: 0.3em;
+    color: black;
+    background-color: rgb(238, 231, 231);
+    margin: 0.3em;
+    cursor: pointer;
+    border-radius: 5px;
+
+
+}
+ul>li>a{
+    color: black;
+    
+
+
+}
+ul>li:hover{
+    background-color: rgba(163, 157, 157, 0.61);
+
+}
+#menu li>ul{
+    display: none;
+
+}
+
+#menu>li:hover>ul{
+    display: block;
+}
+
+
+                        /*FINALIZA LA SECCION DE ANAHI  */
+
 * {
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -164,7 +218,7 @@ ol li {
 .metodoPago{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(241, 241, 221);
+    background-color: #f1f1dd;
     margin: 10px;
     border-radius: 20px;
     border: 1px solid rgb(196, 196, 189);
