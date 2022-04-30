@@ -142,7 +142,7 @@ ul>li:hover{
     transform: none;
 }
 /*estilos de la imagen*/
-div .logo {
+div .imagentf {
     width: 150px;
     height: 150px;
     margin-top: 25px;
@@ -175,7 +175,7 @@ ol li {
 }
 /*Haciendo responsive el footer */
 @media (max-width: 780px) {
-    .logo {
+    .imagentf {
         display:none;
     }
 }
