@@ -539,3 +539,55 @@ input {
     width: 5%;
 }
 
+/* pagina de compra */
+/* icono carrito de compras*/
+
+@media (max-width: 625px) {
+    .cc {
+       display: none;
+    }
+}
+
+.cc {
+    margin-right: 20px;
+    font-size: 30px;
+    color: #f3e5e5;
+}
+.cc:hover{
+    color: #0000ff;
+}
+
+/* item pagina de compra*/
+.con1  {    /* estilos de los productos que se agg al carrito */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.con2  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.con3  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+span { /* Estilo del precio del producto*/
+    font-size: 20px;
+    color: #000;
+}
+.producto{ /* Estilos de los detalles del producto*/
+    display: flex;
+    flex-direction: column;
+}
+.opciones {
+    display: flex;
+    flex-direction: row;
+
+}
+.item img {  /* tamaño de los iconos del carrito*/
+    width: 130px;
+    height: 140px;
+}
+
