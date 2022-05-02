@@ -558,12 +558,21 @@ input {
 }
 
 /* item pagina de compra*/
+#titulocompra {
+    color:#494949;
+    margin: 10px;
+    padding: 5px;
+}
+
+
 .con1  {    /* estilos de los productos que se agg al carrito */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.con2  {
+/*.con2  {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -572,7 +581,8 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+}*/
+
 span { /* Estilo del precio del producto*/
     font-size: 20px;
     color: #000;
@@ -581,13 +591,91 @@ span { /* Estilo del precio del producto*/
     display: flex;
     flex-direction: column;
 }
+    /* estilo de los botones de comprar y eliminar*/
 .opciones {
     display: flex;
     flex-direction: row;
 
 }
+.opciones input {
+    margin: 10px;
+    padding:4px;
+    border-radius: 13px;
+}
+input:hover{
+    color: #611616;
+    background-color: #494949;
+}
+@media (max-width: 625px) { /* Responsive de los botones*/
+    .opciones {
+       display: none;
+    }
+}
+
+
+
 .item img {  /* tamaño de los iconos del carrito*/
     width: 130px;
     height: 140px;
 }
 
+/* Estilo de columna  metodos de pago */
+
+.medpagos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.medpagos a{
+    font-size: 20px;    
+}
+@media (max-width: 625px) {
+    .medpagos {
+       display: none;
+    }
+}
+
+
+/* Estilos de la columna de finalizar compra*/
+.confirmacompra{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.confirmacompra p {
+    font-size: 20px;
+}
+.confirmacompra p b {
+    color: #000;
+}
+.bFinalizarCompra{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    padding: 15px;
+}
+.bFinalizarCompra a input{
+    padding: 4px;
+    border-radius: 13px;
+}
+
+/* Estilos css de el formulario para validar la compra
+pide los datos de la tarjeta*/
+
+.cpagar {
+    color: #a2a2d3;
+    padding: 15px;
+}
+.finalalerta {
+    padding: 8px;
+    margin: 10px;
+    border-radius: 13px;
+    float: right;
+}
+.finalalerta:hover{
+    background-color: #93ce93;
+}
+.datosdeuser {
+    display: flex;
+    justify-content: center;
+}
