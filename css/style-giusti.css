@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    background-color: gray;
+    justify-content: center;
+}
+
+.navlist {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    width: 80%;
+}
+
+.navlist li {
+    margin: 10px;
+    font: bolder;
+    color: black;
+}
+
+.navlist li:hover {
+    color: #AD2501;
+    cursor: pointer;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: none;
+    color: gree;
+    justify-content: center;
+    margin-top: 9px;
+    
+}
+
+button:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+input {
+    background-color: none;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 5%;
+}
+
