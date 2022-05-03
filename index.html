@@ -14,28 +14,34 @@
       </head>
       <body>
         <header>
-          <nav class="w-100 navbar">
-              <ul class="navlist" style="padding: 0%;">
-                  <li>
-                      <a href="./img/pc-icon-vector-13483829.webp"><img class="logo">
-                  </li>
-                  <li>
-                      <a href="">Navbar</a>
-                  </li>
-                  <li>
-                      <a href="">Home</a> 
-                  </li>
-                  <li>
-                      <a href="">Link</a>
-                  </li>
-                  <li>
-                      <a href="">Dropdown</a>
-                  </li>
-                  <a href=""><input type="text"></a>
-                  </li>
-                  <a href=""><button>Search</button></a>
-              </ul>
-          </nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+                <img src="./imgs/favicon.ico" style="width: 80px;" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Navbar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dropdown</a>
+                        </li>                   
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
       </header>    
             <main>              
                 <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -125,13 +131,13 @@
 
               <div class="container">
                   <div class="row">
-                    <div class="categorias col-3 my-5 ">
+                    <div class="categorias col-xs-12 col-lg-3 my-5 ">
                       <div class="subt"><h2>Categorías</h2></div>
                       <ul id="menu">
-                          <li><a href="#">PC</a></li>
-                          <li><a href="#">Celulares</a></li>
-                          <li><a href="#">Notebook</a></li>
-                          <li><a href="#">Accesorios</a></li>  
+                          <li><a href="./pages/categorias/c_pc.html" target="_blank">PC</a></li>
+                          <li><a href="./pages/categorias/celulares.html" target="_blank">Celulares</a></li>
+                          <li><a href="./pages/categorias/notebook.html" target="_blank">Notebook</a></li>
+                          <li><a href="./pages/categorias/accesorios.html" target="_blank">Accesorios</a></li>  
                           <li><a href="#">Marcas</a> 
                               <ul>
                                   <li> <a href=""> Samsung</a> </li>
@@ -142,10 +148,9 @@
                           </li> 
                       </ul>
                     </div>
-                    <div class="cards col-9 my-5">
+                    <div class="cards col-xs-12 col-lg-9 my-5">
               
                       <div class="card" >
-              
                           <img src="imgs/Auricular-HyperX.jpg" class="cardImg" alt="..." >
                           <div class="cardBody">
                             <h5> $15.000</h5>
