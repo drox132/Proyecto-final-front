@@ -352,7 +352,7 @@ div a{
 
 .cardImg{
     width:10rem;
-    height:10rem;
+    max-height:20rem;
     margin:0 auto;
 }
 
