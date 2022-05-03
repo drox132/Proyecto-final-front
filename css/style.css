@@ -1,13 +1,16 @@
-/**{
+/* *{
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    list-style: none;
     margin: 0;
     padding: 0;
-}
+} */
+
+                               /* SECCION ANAHI */
+
+  
 
 .categorias{
-    border: solid 0.5px;
+    
+    /* border: solid 0.5px; */
     width: 20%;
 }
 .subt{
@@ -15,7 +18,7 @@
     text-align: center;
     font-weight: lighter;
 }
-ul>li{
+#menu>li{
     padding: 0.3em;
     color: black;
     background-color: rgb(238, 231, 231);
@@ -42,7 +45,7 @@ ul>li:hover{
 
 #menu>li:hover>ul{
     display: block;
-}*/
+}
 *{
     margin: 0;
     padding: 0;
@@ -93,4 +96,637 @@ color: white;
 }
 th{
     color:#656565 ;
+}
+
+
+                        /*FINALIZA LA SECCION DE ANAHI  */
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* variables 
+:root {
+--facebook:#3b5999;
+--instagram:#e4405f;
+--twitter:#55acee;
+--youtube:#ff0000;
+}  */
+
+
+/*estilos del footer div padre */
+.footer {
+    background-color: #494949;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  /* clase a los contenedores de clase elemnetos */
+  .elementos {
+   margin: 10px;
+    width: auto;
+    align-items: center;
+  }
+.elementos a {
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* clase al parrafo de derechos reservados*/
+  #tf   {
+      color: #ffffff;
+      text-align: center;
+      background-color: #494949;
+      width: 100%;
+  }
+  /*desenfoque*/
+  .elementos:hover a{
+      filter: blur(2px);
+  }
+.elementos a:hover {
+    transform: translateY(-3px) scale(1.5);
+    filter: none;
+} 
+/*
+.footer .facebook:hover{
+    background: var(--facebook);
+}
+.footer .instagram:hover{
+    background: var(--instagram);
+}
+.footer .twitter:hover{
+    background: var(--twitter);
+}
+.footer .youtube:hover{
+    background: var(--youtube);
+}
+*/
+
+/* estilos de la columna quienes somos*/
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.col-1 p {
+    font-size: 12px;
+    text-align: justify; 
+    font-weight: bold;  
+}
+.footer:hover .col-1 a {
+    filter: none;
+    transform: none;
+}
+/*estilos de la imagen*/
+div .imagentf {
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+}
+/*Estilos de la columna 3 contacto */
+.col-3 p {
+font-size: 17px;
+}
+#contacto {
+    text-align: left;
+}
+.boton {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    background-color: #9999bd;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 90px;
+}
+.boton:hover{
+    color: red;
+}
+/*Estilos de la lista */
+ol {
+    list-style: none;
+}
+ol li {
+    font-size: 18px;
+    text-align: left;
+}
+/*Haciendo responsive el footer */
+@media (max-width: 780px) {
+    .imagentf {
+        display:none;
+    }
+}
+@media (max-width: 780px) {
+    .col-1 {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    #tf {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .iconos {
+       display: none;
+    }
+}
+@media (max-width: 600px) {
+    .lista {
+       display: none;
+    }
+}
+
+
+
+    /* background-color: aqua; */
+
+
+/* ESTA ES LA SECION DE ESTILO DE LOS MEDIOS DE PAGO */
+
+/* AQUI SE ESTA DANDO ESTILO AL CONTENEDOR PADRE DE LOS METODOS DE PAGOS */
+.metodoPago{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1dd;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(196, 196, 189);
+}
+
+/* AQUI SE ESTA DANDO ESTILO AL HIJO METODO DE PAGO */
+section div{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 10px;
+}
+/* */
+section div i{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 1px solid rgb(196, 196, 189);
+
+}
+/* AQUI SE ESTA DANDO ESTILO A LOS ICONOS DE ANCLE*/
+.metodo{
+    font-size: 300%;
+}
+
+/* AQUI SE ESTA DANDO ESTILO AL INDEX TDC */
+.pago{
+    position: relative;
+    padding: 5px;
+    background-color: gray;
+}
+
+.contenedortdc{
+    background-color: #fff;
+    max-width: 80%;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 4px 5px black;
+
+}
+.img-credit{
+    width: 100px;
+    height: 60px;
+    padding: 20px;
+
+}
+div p{
+    color: rgb(130, 131, 133);
+    padding: 5px;
+}
+div a{
+    text-decoration: none;
+}
+#close{
+    float: right;
+    font-size: x-large;
+
+
+}
+
+/* AQUI SE ESTA DANDO ESTILO A LA SECCION DE TDD */
+
+.pago{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.contenedortdd{
+    background-color: #fff;
+    width: 70%;
+    height: 500px;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 4px 5px black;
+    overflow: scroll;
+}
+.itdd{
+    float: left;
+    margin: 15px;
+    padding: 15px;
+    font-size: x-large;
+}
+.img-debito{
+    margin: 10px;
+    padding: 5px;
+    width: 80px;
+    box-shadow: 4px 4px 4px 4px rgb(161, 161, 157);
+}
+.c-img-debito{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-efectivo{
+    margin: 20px;
+    padding: 10px;
+    width: 70px;
+}
+.img-elect{
+    width: 200px;
+    margin: 0 20px;
+}
+
+/*Seccion cards*/
+
+.seccionCards{
+    width:75%;
+    float:right;
+}
+
+/* Estilo cards*/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem,1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:1rem;
+   
+}
+
+.card{
+    border: 4px solid rgb(222, 9, 9);
+    padding:0;
+}
+
+.card:hover{
+    -webkit-box-shadow: 4px 6px 36px -4px rgba(26,29,71,1);
+    -moz-box-shadow: 4px 6px 36px -4px rgba(26,29,71,1);
+    box-shadow: 4px 6px 36px -4px rgba(26,29,71,1);
+}
+
+.cardImg{
+    width:10rem;
+    max-height:20rem;
+    margin:0 auto;
+}
+
+.cardBody{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+/* ESTA ES LA SECION DE ESTILO DE LOS MEDIOS DE PAGO */
+
+/* AQUI SE ESTA DANDO ESTILO AL CONTENEDOR PADRE DE LOS METODOS DE PAGOS */
+.metodoPago{
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+/* AQUI SE ESTA DANDO ESTILO AL HIJO METODO DE PAGO */
+section div{
+    display: flex;
+    align-items: center;
+    padding: 2px 2px;
+    margin: 2px;
+}
+div h2{
+    font-size: 80%;
+}
+/* */
+section div i{
+    padding: 5px;
+    border-radius: 30%;
+    margin-right: 10px;
+}
+/* AQUI SE ESTA DANDO ESTILO A LOS ICONOS DE ANCLE*/
+.metodo{
+    font-size: 100%;
+}
+
+/* AQUI SE ESTA DANDO ESTILO AL INDEX TDC */
+/* .pago{
+    position: relative;
+    padding: 5px;
+    background-color: gray;
+} */
+
+.contenedortdc{
+    background-color: #fff;
+    max-width: 70%;
+    height: 400px;
+    padding: 80px;
+    overflow: scroll;
+}
+.img-credit{
+    width: 80px;
+    height: 40px;
+    padding: 20px;
+}
+
+div p{
+    font-size: small;
+}
+
+}
+#close{
+    /* float: right; */
+    font-size: large;
+    margin-right: -30px;
+    margin-top: -30px;
+}
+
+/* AQUI SE ESTA DANDO ESTILO A LA SECCION DE TDD */
+
+.pago{
+    /* display: flex;
+    justify-content: center; */
+    align-content: center;
+}
+.contenedortdd{
+    /* background-color: #fff; */
+    /* width: 70%; */
+    height: 400px;
+    padding: 50px 20px;
+    /* border-radius: 25px; */
+    /* box-shadow: 5px 5px 4px 5px black; */
+    /* overflow: scroll; */
+}
+/* .itdd{
+    float: left;
+    margin: 15px;
+    padding: 15px;
+    font-size: x-large;
+} */
+.img-debito{
+    /* margin: 10px; */
+    padding: 5px;
+    width: 40px;
+    /* box-shadow: 4px 4px 4px 4px rgb(161, 161, 157); */
+}
+/* .c-img-debito{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.img-efectivo{
+    margin: 10px;
+    padding: 5px;
+    width: 50px;
+}
+.img-elect{
+    width: 80px;
+}
+.electronico{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* navbar */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    background-color: gray;
+    justify-content: center;
+}
+
+.navlist {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    width: 80%;
+}
+
+.navlist li {
+    margin: 10px;
+    font: bolder;
+    color: black;
+}
+
+.navlist li:hover {
+    color: #AD2501;
+    cursor: pointer; 
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: none;
+    color: gree;
+    justify-content: center;
+    margin-top: 9px;
+    
+}
+
+button:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+input {
+    background-color: none;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 5%;
+}
+
+/* pagina de compra */
+/* icono carrito de compras*/
+
+@media (max-width: 625px) {
+    .cc {
+       display: none;
+    }
+}
+
+.cc {
+    margin-right: 20px;
+    font-size: 30px;
+    color: #f3e5e5;
+}
+.cc:hover{
+    color: #0000ff;
+}
+
+/* item pagina de compra*/
+#titulocompra {
+    color:#494949;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.con1  {    /* estilos de los productos que se agg al carrito */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*.con2  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.con3  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}*/
+
+span { /* Estilo del precio del producto*/
+    font-size: 20px;
+    color: #000;
+}
+.producto{ /* Estilos de los detalles del producto*/
+    display: flex;
+    flex-direction: column;
+}
+    /* estilo de los botones de comprar y eliminar*/
+.opciones {
+    display: flex;
+    flex-direction: row;
+
+}
+.opciones input {
+    margin: 10px;
+    padding:4px;
+    border-radius: 13px;
+}
+input:hover{
+    color: #611616;
+    background-color: #494949;
+}
+@media (max-width: 625px) { /* Responsive de los botones*/
+    .opciones {
+       display: none;
+    }
+}
+
+
+
+.item img {  /* tamaño de los iconos del carrito*/
+    width: 130px;
+    height: 140px;
+}
+
+/* Estilo de columna  metodos de pago */
+
+.medpagos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.medpagos a{
+    font-size: 20px;    
+}
+@media (max-width: 625px) {
+    .medpagos {
+       display: none;
+    }
+}
+
+
+/* Estilos de la columna de finalizar compra*/
+.confirmacompra{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.confirmacompra p {
+    font-size: 20px;
+}
+.confirmacompra p b {
+    color: #000;
+}
+.bFinalizarCompra{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    padding: 15px;
+}
+.bFinalizarCompra a input{
+    padding: 4px;
+    border-radius: 13px;
+}
+
+/* Estilos css de el formulario para validar la compra
+pide los datos de la tarjeta*/
+
+.cpagar {
+    color: #a2a2d3;
+    padding: 15px;
+}
+.finalalerta {
+    padding: 8px;
+    margin: 10px;
+    border-radius: 13px;
+    float: right;
+}
+.finalalerta:hover{
+    background-color: #93ce93;
+}
+.datosdeuser {
+    display: flex;
+    justify-content: center;
 }
