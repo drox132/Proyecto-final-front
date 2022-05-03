@@ -46,6 +46,57 @@ ul>li:hover{
 #menu>li:hover>ul{
     display: block;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+.imagen-nombre{
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    border: solid 1px;
+    
+}
+.nombre{
+    font-size: 2em;
+    padding-top:1em ;
+    margin: 0 auto;
+
+    
+}
+.datos{
+    width: 100%;
+    margin-top: 2em;
+}
+.lista{
+    width: 50%;
+    border: solid 1px;
+    margin: 0 auto;
+    text-align: center;
+}
+#btn{
+    margin-top: 3em;
+float: right;
+background-color: rgb(9, 110, 23);
+border: none;
+border-radius: 3px;
+height: 2em;
+width: 6em;
+cursor: pointer;
+color: white;
+}
+#btn:hover{
+    background-color:rgba(3, 83, 14, 0.596) ;
+
+}
+.tabla{
+    margin: 1em auto;
+    font-size: 1.5em;
+    
+}
+th{
+    color:#656565 ;
+}
 
 
                         /*FINALIZA LA SECCION DE ANAHI  */
