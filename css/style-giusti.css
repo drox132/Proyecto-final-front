@@ -60,3 +60,19 @@ input {
     width: 5%;
 }
 
+/*Stylos de la pagina miCuenta-------------------*/
+
+.miCuenta{
+    width: 100%;
+    height: 60em;
+    text-align: center;
+    background-color: #d8e7e4;
+
+    
+}
+.container{
+    margin-top: 3em;
+}
+.btn{
+    float: center;
+}
