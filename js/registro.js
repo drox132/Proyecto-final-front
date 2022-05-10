@@ -27,7 +27,7 @@ if (listaUsuarios.includes(usuario[0].emailUsuario)){
 else {
 
 //Guarda en un array los nombres de usuario.
-listaUsuarios.push((usuario[0].emailUsuario))
+listaUsuarios.push((usuario[0].emailUsuario));
 
 
 console.log("lista "+listaUsuarios)

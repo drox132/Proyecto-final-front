@@ -16,6 +16,7 @@ if(localStorage.getItem(email)!=null && contraseña==usuarios[0].contraseñaUsua
    alert("Bienvenido"+`${email}`);
 }
 
+//Si no existe el usuario o la contraseña es incorrecta no podra iniciar
 else{
      alert("Usuario o contraseña incorrecta");
 }
