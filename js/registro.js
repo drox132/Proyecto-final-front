@@ -35,6 +35,7 @@ console.log("lista "+listaUsuarios)
 
 //Guardamos los datos del usuario en localStorage
 localStorage.setItem(`${email}`, JSON.stringify(usuario));
+alert("Usuario registrado con exito!")
 
 }
 
