@@ -182,8 +182,6 @@ const generarCards= (productos)=>{
         let productosGetLocalStorage= localStorage.getItem("listProductStorage",productosLocalStorage);
 
 
-        console.log(productosGetLocalStorage);
-
 
 
 
