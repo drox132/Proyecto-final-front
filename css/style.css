@@ -411,6 +411,9 @@ div a{
     flex-direction: column;
     text-align: center;
 }
+.contenedor-img{
+    height: 14rem;
+}
 
 
 

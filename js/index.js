@@ -1,41 +1,189 @@
-let name= "Mariano";
 
-function alerta(){
-    alert("Compra realizada con exito, Disfruta tu producto");
-}
 
 const productos = [
     {
         id: 1,
-        nombre: "Auricular HyperX Cloud II",
+        img: "imgs/Auricular-HyperX.jpg",
         precio: 15000,
-        img: "",
-        detalle: "Auriculares",
+        descripcion:"Auricular HyperX Cloud II",
         stock: 5
     },
     {
         id: 2,
-        nombre: "Teclado SteelSeries Apex 3",
+        img: "imgs/Teclado.jpg",
         precio: 25000,
-        img: "",
-        detalle: "Teclado",
-        stock: 5
+        descripcion:"Teclado SteelSeries Apex 3",
+        stock: 7
     },
     {
         id: 3,
-        nombre: "Celular Moto G Power 2022",
-        precio: 50000,
-        img: "",
-        detalle: "Telefono celular",
-        stock: 5
+        img: "imgs/Teclado.jpg",
+        precio: 25000,
+        descripcion:"Teclado SteelSeries Apex 3",
+        stock: 6
     },
-
     {
         id: 4,
-        nombre: "Monitor Sceptre",
+        img: "imgs/Monitor FHD.jpg",
         precio: 35000,
-        img: "",
-        detalle: "Monitor HD",
+        descripcion:"Auricular HyperX Cloud II",
+        stock: 2
+    },
+    {
+        id: 5,
+        img: "imgs/Moto G Power.jpg",
+        precio: 50000,
+        descripcion:"Celular Moto G Power 2022",
+        stock: 10
+    },
+    {
+        id: 6,
+        img: "imgs/Auricular-HyperX.jpg",
+        precio: 15000,
+        descripcion:"Auricular HyperX Cloud II",
+        stock: 15
+    },
+    {
+        id: 7,
+        img: "imgs/Teclado.jpg",
+        precio: 25000,
+        descripcion:"Teclado SteelSeries Apex 3",
+        stock: 3
+    },
+    {
+        id: 8,
+        img: "imgs/Teclado.jpg",
+        precio: 25000,
+        descripcion:"Teclado SteelSeries Apex 3",
         stock: 5
     },
+    {
+        id: 9,
+        img: "imgs/Monitor FHD.jpg",
+        precio: 35000,
+        descripcion:"Auricular HyperX Cloud II",
+        stock: 9
+    },
+    {
+        id: 10,
+        img: "imgs/Moto G Power.jpg",
+        precio: 50000,
+        descripcion:"Celular Moto G Power 2022",
+        stock: 11
+    },
+    {
+        id: 11,
+        img: "imgs/Auricular-HyperX.jpg",
+        precio: 15000,
+        descripcion:"Auricular HyperX Cloud II",
+        stock: 15
+    },
+    {
+        id: 12,
+        img: "imgs/Teclado.jpg",
+        precio: 25000,
+        descripcion:"Teclado SteelSeries Apex 3",
+        stock: 52
+    },
+    {
+        id: 13,
+        img: "imgs/Teclado.jpg",
+        precio: 25000,
+        descripcion:"Teclado SteelSeries Apex 3",
+        stock: 4
+    },
+    {
+        id: 14,
+        img: "imgs/Monitor FHD.jpg",
+        precio: 35000,
+        descripcion:"Auricular HyperX Cloud II",
+        stock: 16
+    },
+    {
+        id: 15,
+        img: "imgs/Moto G Power.jpg",
+        precio: 50000,
+        descripcion:"Celular Moto G Power 2022",
+        stock: 8
+    },
+    {
+        id: 16,
+        img: "imgs/Auricular-HyperX.jpg",
+        precio: 15000,
+        descripcion:"Auricular HyperX Cloud II",
+        stock: 2
+    },
+    {
+        id: 17,
+        img: "imgs/Teclado.jpg",
+        precio: 25000,
+        descripcion:"Teclado SteelSeries Apex 3",
+        stock: 4
+    },
+    {
+        id: 18,
+        img: "imgs/Teclado.jpg",
+        precio: 25000,
+        descripcion:"Teclado SteelSeries Apex 3",
+        stock: 66
+    },
+    {
+        id: 19,
+        img: "imgs/Monitor FHD.jpg",
+        precio: 35000,
+        descripcion:"Auricular HyperX Cloud II",
+        stock: 3
+    },
+    {
+        id: 20,
+        img: "imgs/Moto G Power.jpg",
+        precio: 50000,
+        descripcion:"Celular Moto G Power 2022",
+        stock: 4
+    },
 ]
+
+
+
+const generarCards= (productos)=>{
+    let cards= document.querySelector(".cards");
+
+    productos.forEach(producto => {
+        let cardProducto=document.createElement("div");
+        cardProducto.className="card p-3" ;
+        
+
+        let cardPlantilla =
+         `
+            <div class="contenedor-img d-flex align-content-center">
+            <img src="${producto.img}" class="cardImg d-block m-auto " alt="..." >
+            </div>
+            <div class="cardBody">
+                <h5> ${producto.precio}</h5>
+                <p >${producto.descripcion}</p>
+                <p> Disponible ${producto.stock}</p>
+                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            </div>
+        `
+
+        cardProducto.innerHTML=cardPlantilla;
+
+        cards.appendChild(cardProducto);
+
+
+    });
+}
+        generarCards(productos);
+
+        let productosLocalStorage=JSON.stringify(productos);
+
+        localStorage.setItem("listProductStorage",productosLocalStorage);
+
+        let productosGetLocalStorage= localStorage.getItem("listProductStorage",productosLocalStorage);
+
+
+        console.log(productosGetLocalStorage);
+
+
+
+
