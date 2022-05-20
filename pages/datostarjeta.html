@@ -11,28 +11,38 @@
 </head>
 <body>
     <header>
-        <nav class="w-100 navbar">
-            <ul class="navlist" style="padding: 0%;">
-                <li>
-                    <a href=""><img class="logo">
-                </li>
-                <li>
-                    <a href="">Navbar</a>
-                </li>
-                <li>
-                    <a href="">Home</a> 
-                </li>
-                <li>
-                    <a href="">Link</a>
-                </li>
-                <li>
-                    <a href="">Dropdown</a>
-                </li>
-                <a href=""><input type="text"></a>
-                </li>
-                <a href=""><button>Search</button></a>
-            </ul>
-
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid">
+            <img src="../imgs/favicon.ico" style="width: 80px;" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-4 text-black" aria-current="page" href="../pages/miCuenta.html" target="_blank">Mi cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  fs-4 text-black" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 text-black" href="">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fs-4 text-black" href="../pages/IniciarSesion.html">Iniciar Sesion</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 text-black" href="../pages/paginaDeRegistro.html">Registrarse</a>
+                    </li>                   
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark text-black" type="submit">Search</button>
+                </form>
+                <a class="cc" href="./pages/carrito.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+      </nav>
     </header>
     
     <main>
@@ -81,7 +91,7 @@
               <p id="qs" >Empresa dedicada a la venta de equipos informaticos,
                 como celulares computadoras, accesorios, entre otros.</p>
             </div>
-            <div class="elementos lista">
+            <div class="elementos lista border-0">
               <h4>Servicios para TI</h4>
               <ol>
                 <li>Ventas</li>

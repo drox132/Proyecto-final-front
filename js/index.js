@@ -64,13 +64,13 @@ const productos = [
         descripcion:"Auricular HyperX Cloud II",
         stock: 9
     },
-    {
-        id: 10,
-        img: "imgs/Moto G Power.jpg",
-        precio: 50000,
-        descripcion:"Celular Moto G Power 2022",
-        stock: 11
-    },
+    // {
+    //     id: 10,
+    //     img: "imgs/Moto G Power.jpg",
+    //     precio: 50000,
+    //     descripcion:"Celular Moto G Power 2022",
+    //     stock: 11
+    // },
     {
         id: 11,
         img: "imgs/Auricular-HyperX.jpg",
@@ -85,13 +85,13 @@ const productos = [
         descripcion:"Teclado SteelSeries Apex 3",
         stock: 52
     },
-    {
-        id: 13,
-        img: "imgs/Teclado.jpg",
-        precio: 25000,
-        descripcion:"Teclado SteelSeries Apex 3",
-        stock: 4
-    },
+    // {
+    //     id: 13,
+    //     img: "imgs/Teclado.jpg",
+    //     precio: 25000,
+    //     descripcion:"Teclado SteelSeries Apex 3",
+    //     stock: 4
+    // },
     {
         id: 14,
         img: "imgs/Monitor FHD.jpg",
@@ -106,13 +106,13 @@ const productos = [
         descripcion:"Celular Moto G Power 2022",
         stock: 8
     },
-    {
-        id: 16,
-        img: "imgs/Auricular-HyperX.jpg",
-        precio: 15000,
-        descripcion:"Auricular HyperX Cloud II",
-        stock: 2
-    },
+    // {
+    //     id: 16,
+    //     img: "imgs/Auricular-HyperX.jpg",
+    //     precio: 15000,
+    //     descripcion:"Auricular HyperX Cloud II",
+    //     stock: 2
+    // },
     {
         id: 17,
         img: "imgs/Teclado.jpg",
@@ -127,13 +127,13 @@ const productos = [
         descripcion:"Teclado SteelSeries Apex 3",
         stock: 66
     },
-    {
-        id: 19,
-        img: "imgs/Monitor FHD.jpg",
-        precio: 35000,
-        descripcion:"Auricular HyperX Cloud II",
-        stock: 3
-    },
+    // {
+    //     id: 19,
+    //     img: "imgs/Monitor FHD.jpg",
+    //     precio: 35000,
+    //     descripcion:"Auricular HyperX Cloud II",
+    //     stock: 3
+    // },
     {
         id: 20,
         img: "imgs/Moto G Power.jpg",
