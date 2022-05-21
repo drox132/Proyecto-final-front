@@ -145,6 +145,46 @@ const productos = [
 
 
 
+let carrito=[]
+
+
+let Carrito= (producto) =>{
+    if(localStorage.getItem("Carrito")==null ) {  //Si el carrito esta vacio, cargamos el carrito         
+        console.log("carrito vacio")
+        cargarCarrito(producto,carrito)
+    }         
+    else{
+        carrito=JSON.parse(localStorage.getItem("Carrito")); //Si el carrito no esta vacio, cargamos datos de localstorage
+        cargarCarrito(producto)        
+    }
+}
+
+cargarCarrito=(producto)=>{
+
+
+    carrito.push(producto);
+    let productosCarrito= JSON.stringify(carrito)
+    localStorage.setItem("Carrito",productosCarrito)    
+        
+ 
+}
+
+
+carritoSinRepetidos=(producto)=>{
+
+    let repetido=false     
+    carrito.forEach(items =>{
+        if(producto.id===items.id){
+           console.log(producto.id +" igual a " + items.id)
+           repetido=true;
+        }
+       
+    })
+
+    return repetido;
+}
+
+
 const generarCards= (productos)=>{
     let cards= document.querySelector(".cards");
 
@@ -162,7 +202,7 @@ const generarCards= (productos)=>{
                 <h5> ${producto.precio}</h5>
                 <p >${producto.descripcion}</p>
                 <p> Disponible ${producto.stock}</p>
-                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                <a id="cart${producto.id}" class="btn btn-primary">Agregar al carrito</a>
             </div>
         `
 
@@ -170,16 +210,38 @@ const generarCards= (productos)=>{
 
         cards.appendChild(cardProducto);
 
+     let productCard = document.getElementById("cart" + producto.id);
+
+     productCard.addEventListener("click", (evento)=>{
+        evento.preventDefault();
+
+
+        if(!carritoSinRepetidos(producto)){
+            Carrito(producto)
+            console.log(carritoSinRepetidos(producto))
+        }
+       
+             
+    });
+
+    
 
     });
+
+    
+
 }
         generarCards(productos);
+
+
 
         let productosLocalStorage=JSON.stringify(productos);
 
         localStorage.setItem("listProductStorage",productosLocalStorage);
 
         let productosGetLocalStorage= localStorage.getItem("listProductStorage",productosLocalStorage);
+
+       
 
 
 
