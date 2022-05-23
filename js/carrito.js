@@ -1,3 +1,10 @@
+let carrito = [];
+
+
+if (localStorage.getItem("Carrito")) {
+    carrito = JSON.parse(localStorage.getItem("Carrito"));
+}
+
 let productos= JSON.parse(localStorage.getItem("Carrito"));
 
 
@@ -21,7 +28,7 @@ const generarCards= (productos)=>{
                 <h5> ${producto.precio}</h5>
                 <p >${producto.descripcion}</p>
                 <p> Disponible ${producto.stock}</p>
-                <a id="cart${producto.id}" class="btn btn-danger">Eliminar</a>
+                <a id="cart2${producto.id}" class="btn btn-danger">Eliminar</a>
             </div>
         `
 
@@ -29,11 +36,14 @@ const generarCards= (productos)=>{
 
         cards.appendChild(cardProducto);
 
-     
+        let botonEliminar=document.getElementById("cart2" + producto.id)
+            botonEliminar.addEventListener("click", (evento) =>{
+                evento.preventDefault();
+                console.log("click")
+                carrito.splice(productos)
+            } )
+
 
     });
-
-    
-
 }
         generarCards(productos);
