@@ -12,7 +12,6 @@ let productos= JSON.parse(localStorage.getItem("Carrito"));
 
 const generarCards= (productos)=>{
     let cards= document.querySelector(".cards");
-
     productos.forEach(producto => {
 
         let cardProducto=document.createElement("div");
@@ -37,16 +36,38 @@ const generarCards= (productos)=>{
         cards.appendChild(cardProducto);
 
         cardProducto.querySelector('.btn-danger').addEventListener('click', removerDelCarrito)
- });
- //funcion para remover del Carrito
- function removerDelCarrito(event){
-   const  butonClicked=event.targed
-   carrito.splice(productos.id -1, 1 );
-   return  localStorage.setItem("Carrito", JSON.stringify(carrito));
- }
+        
+        
+        //funcion para remover del Carrito
+        function removerDelCarrito(event){
+
+        carrito.forEach((item,indice)=>matchId(item,indice)); 
+        let carritoActualizado= localStorage.setItem("Carrito", JSON.stringify(carrito));
+        actualizarCards();
+        return  carritoActualizado;
+        }
+
+        //Se borra la card seleccionada a partir de su posicion en el arreglo
+        function matchId(item,indice){
+            if(item.id==producto.id){  //al recorrer "carrito" y encontrarse el id a eliminar , se lo borra de la posicion en el arreglo.
+                carrito.splice(indice,1);
+            }
+        }
+       
+    
+    });   
+} 
 
 
+
+//funcion para mostrar en pantalla las cards actualizadas al eliminar alguna
+function actualizarCards(){
+document.querySelector(".cards").innerHTML="";
+obtengoCarrito = JSON.parse(localStorage.getItem("Carrito"));
+generarCards(obtengoCarrito);
 }
+
+
         generarCards(productos);
 //funcion para el alert al comprar
 
