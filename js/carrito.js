@@ -38,7 +38,7 @@ const generarCards= (productos)=>{
 
         cardProducto.querySelector('.btn-danger').addEventListener('click', removerDelCarrito)
  });
-
+ //funcion para remover del Carrito
  function removerDelCarrito(event){
    const  butonClicked=event.targed
    carrito.splice(productos.id -1, 1 );
@@ -48,6 +48,7 @@ const generarCards= (productos)=>{
 
 }
         generarCards(productos);
+//funcion para el alert al comprar
 
     let compra="Compra Realizada con Exito, Disfruta tu Producto"       
 function alerta () {
