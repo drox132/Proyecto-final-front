@@ -1,3 +1,9 @@
+let carrito = [];
+
+
+if (localStorage.getItem("Carrito")) {
+    carrito = JSON.parse(localStorage.getItem("Carrito"));
+}
 
 let productos= JSON.parse(localStorage.getItem("Carrito"));
 
@@ -22,7 +28,7 @@ const generarCards= (productos)=>{
                 <h5> ${producto.precio}</h5>
                 <p >${producto.descripcion}</p>
                 <p> Disponible ${producto.stock}</p>
-                <a id="cart${producto.id}" class="btn btn-danger">Eliminar</a>
+                <a id="cart2${producto.id}" class="btn btn-danger">Eliminar</a>
             </div>
         `
 
@@ -30,11 +36,22 @@ const generarCards= (productos)=>{
 
         cards.appendChild(cardProducto);
 
-     
+        cardProducto.querySelector('.btn-danger').addEventListener('click', removerDelCarrito)
+ });
+ //funcion para remover del Carrito
+ function removerDelCarrito(event){
+   const  butonClicked=event.targed
+   carrito.splice(productos.id -1, 1 );
+   return  localStorage.setItem("Carrito", JSON.stringify(carrito));
+ }
 
-    });
-
-    
 
 }
         generarCards(productos);
+//funcion para el alert al comprar
+
+    let compra="Compra Realizada con Exito, Disfruta tu Producto"       
+function alerta () {
+            alert( compra);
+        }
+       
