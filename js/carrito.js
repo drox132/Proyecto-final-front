@@ -36,14 +36,21 @@ const generarCards= (productos)=>{
 
         cards.appendChild(cardProducto);
 
-        let botonEliminar=document.getElementById("cart2" + producto.id)
-            botonEliminar.addEventListener("click", (evento) =>{
-                evento.preventDefault();
-                console.log("click")
-                carrito.splice(productos)
-            } )
+        cardProducto.querySelector('.btn-danger').addEventListener('click', removerDelCarrito)
+ });
+
+ function removerDelCarrito(event){
+   const  butonClicked=event.targed
+   carrito.splice(productos.id -1, 1 );
+   return  localStorage.setItem("Carrito", JSON.stringify(carrito));
+ }
 
 
-    });
 }
         generarCards(productos);
+
+    let compra="Compra Realizada con Exito, Disfruta tu Producto"       
+function alerta () {
+            alert( compra);
+        }
+       

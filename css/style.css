@@ -734,3 +734,12 @@ pide los datos de la tarjeta*/
     display: flex;
     justify-content: center;
 }
+/* boton finalizar compra del la pagina del carrito*/
+#botonFinalizarCompraCarrito {
+    padding: 5px;
+    border-radius: 10px;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    color:#327e32;
+}
