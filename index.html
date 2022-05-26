@@ -14,33 +14,33 @@
       </head>
       <body>
         <header> 
-          <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+          <nav class="navbar navbar-expand-lg" style="background-color: #ff6341;">
             <div class="container-fluid">
-                <img src="./imgs/favicon.ico" style="width: 80px;" alt="">
+                <img src="./imgs/favicon.ico" style="width: 60px; background:white;border-radius:4px;" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active fs-4 text-black" aria-current="page" href="./pages/miCuenta.html" target="_blank">Mi cuenta</a>
+                            <a class="nav-link  fs-4 text-black links" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  fs-4 text-black" aria-current="page" href="#">Home</a>
+                          <a class="nav-link active fs-4 text-black links" aria-current="page" href="./pages/miCuenta.html" target="_blank">Mi cuenta</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 text-black links" href="">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-black" href="">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link fs-4 text-black" href="./pages/IniciarSesion.html">Iniciar Sesion</a>
+                          <a class="nav-link fs-4 text-black links" href="./pages/IniciarSesion.html">Iniciar Sesion</a>
                         </li>  
                         <li class="nav-item">
-                            <a class="nav-link fs-4 text-black" href="./pages/paginaDeRegistro.html">Registrarse</a>
+                            <a class="nav-link fs-4 text-black links" href="./pages/paginaDeRegistro.html">Registrarse</a>
                         </li>                   
                     </ul>
                     <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark text-black" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-light k text-black" type="submit">Buscar</button>
                     </form>
                     <a class="cc" href="./pages/carrito.html"><i class="fas fa-shopping-cart"></i></a>
                 </div>
@@ -70,7 +70,7 @@
                 </button>
               </div>
               
-              <section class="metodoPago container-fluid" >
+              <section class="metodoPago" >
                 <div > 
                   <i><a href="pages/tdc.html" class="fas fa-credit-card metodo" ></a></i>
                   <h2>Tarjeta de Credito</h2>
@@ -125,7 +125,7 @@
             <!-- columnas del footer-->
             <div class="col-1">
               <h4>Quienes Somos</h4> 
-                <p id="qs" >Empresa dedicada a la venta de equipos informaticos,
+                <p class="parrafo" id="qs" >Empresa dedicada a la venta de equipos informaticos,
                   como celulares computadoras, accesorios, entre otros.</p>
               </div>
               <div class="elementos lista border-0">
@@ -138,16 +138,16 @@
                   <li>Descuentos</li>
                 </ol>
               </div>
-              <div class="elementos iconos">
+              <div class="elementos iconos" >
                 <h4 id="contacto">Contacto</h4>
                 <div class="col-3">
                   <div>
                     <i class="fa fa-phone"></i>
-                    <p>1163090865</p>
+                    <p  class="parrafo">1163090865</p>
                   </div>
                   <div>
                     <i class="fa fa-envelope"></i>
-                    <p>Tecnoflex@gmail.com</p>
+                    <p  class="parrafo">Tecnoflex@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -158,10 +158,12 @@
                   <button class="boton" type="submit">suscribete</button>
                 </form>
                 <h4>SIGUENOS</h4>
+                <div class="iconos">
                 <a href="#" class="fa fa-facebook facebook"></a>
                 <a href="#" class="fa fa-instagram instagram "></a>
                 <a href="#" class="fa fa-twitter  twitter"></a>
                 <a href="#" class="fa fa-youtube  youtube"></a>
+                </div>
               </div>
             </div>
             <p id="tf">&copy; TECNO FLEX, 2022 All rights reserved</p>   

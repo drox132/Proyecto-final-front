@@ -11,9 +11,9 @@
 </head>
 <body>
     <header> 
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <nav class="navbar navbar-expand-lg "style="background-color: #ff6341;">
           <div class="container-fluid">
-              <img src="../imgs/favicon.ico" style="width: 80px;" alt="">
+              <img src="../imgs/favicon.ico" style="width: 60px;background-color: white;border-radius: 4px;" alt="">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -30,10 +30,10 @@
                       </li>                   
                   </ul>
                   <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-dark text-black" type="submit">Search</button>
-                  </form>
-                  <a class="cc" href="./pages/carrito.html"><i class="fas fa-shopping-cart"></i></a>
+                    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-light k text-black" type="submit">Buscar</button>
+                    </form>
+                    <a class="cc" href="./pages/carrito.html"><i class="fas fa-shopping-cart"></i></a>
               </div>
           </div>
         </nav>
@@ -76,56 +76,63 @@
     </main>
     
     <footer>
-        <div class="footer">
-          <div>
-          <img class="imagentf" src="../imgs/IMG-20220421-WA0060.jpg" alt="dañada">
+      <div class="footer">
+        <div>
+        <img class="imagentf" src="../imgs/IMG-20220421-WA0060.jpg" alt="dañada">
+      </div>
+      <!-- columnas del footer-->
+      <div class="col-1">
+        <h4>Quienes Somos</h4> 
+          <p class="parrafo" id="qs" >Empresa dedicada a la venta de equipos informaticos,
+            como celulares computadoras, accesorios, entre otros.</p>
         </div>
-        <!-- columnas del footer-->
-        <div class="col-1">
-          <h4>Quienes Somos</h4> 
-            <p id="qs" >Empresa dedicada a la venta de equipos informaticos,
-              como celulares computadoras, accesorios, entre otros.</p>
-          </div>
-          <div class="elementos lista border-0">
-            <h4>Servicios para TI</h4>
-            <ol>
-              <li>Ventas</li>
-              <li>Reparaciones</li>
-              <li>Anuncia con nosotros</li>
-              <li>Promociones</li>
-              <li>Descuentos</li>
-            </ol>
-          </div>
-          <div class="elementos iconos">
-            <h4 id="contacto">Contacto</h4>
-            <div class="col-3">
-              <div>
-                <i class="fa fa-phone"></i>
-                <p>1163090865</p>
-              </div>
-              <div>
-                <i class="fa fa-envelope"></i>
-                <p>Tecnoflex@gmail.com</p>
-              </div>
+        <div class="elementos lista border-0">
+          <h4>Servicios para TI</h4>
+          <ol>
+            <li>Ventas</li>
+            <li>Reparaciones</li>
+            <li>Anuncia con nosotros</li>
+            <li>Promociones</li>
+            <li>Descuentos</li>
+          </ol>
+        </div>
+        <div class="elementos iconos" >
+          <h4 id="contacto">Contacto</h4>
+          <div class="col-3">
+            <div>
+              <i class="fa fa-phone"></i>
+              <p  class="parrafo">1163090865</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p  class="parrafo">Tecnoflex@gmail.com</p>
             </div>
           </div>
-          <div class="elementos">
-            <h4>Recibe Nuestras ofertas</h4>
-            <form>				
-              <input name="EMAIL" id="email" placeholder="Enter Your Email" class="form-control" type="email">
-              <button class="boton" type="submit">suscribete</button>
-            </form>
-            <h4>SIGUENOS</h4>
-            <a href="#" class="fa fa-facebook facebook"></a>
-            <a href="#" class="fa fa-instagram instagram "></a>
-            <a href="#" class="fa fa-twitter  twitter"></a>
-            <a href="#" class="fa fa-youtube  youtube"></a>
+        </div>
+        <div class="elementos">
+          <h4>Recibe Nuestras ofertas</h4>
+          <form>				
+            <input name="EMAIL" id="email" placeholder="Enter Your Email" class="form-control" type="email">
+            <button class="boton" type="submit">suscribete</button>
+          </form>
+          <h4>SIGUENOS</h4>
+          <div class="iconos">
+          <a href="#" class="fa fa-facebook facebook"></a>
+          <a href="#" class="fa fa-instagram instagram "></a>
+          <a href="#" class="fa fa-twitter  twitter"></a>
+          <a href="#" class="fa fa-youtube  youtube"></a>
           </div>
         </div>
-        <p id="tf">&copy; TECNO FLEX, 2022 All rights reserved</p>   
-      </footer>
+      </div>
+      <p id="tf">&copy; TECNO FLEX, 2022 All rights reserved</p>   
 
+    </footer>
+
+
+    
 <script src="/Proyecto-final-front/js/login.js"></script>
 
 </body>
+
+
 </html>
