@@ -6,17 +6,22 @@
 
                                /* SECCION ANAHI */
 
-
+main{
+    background: #ebebeb;
+}
 
 .categorias{
 
     /* border: solid 0.5px; */
     width: 20%;
+    height: 450px ;
+   
 }
 .subt{
     height: 3em;
     text-align: center;
     font-weight: lighter;
+ 
 }
 #menu>li{
     padding: 0.3em;
@@ -30,13 +35,13 @@
 }
 ul>li>a{
     color: black;
-
-
-
+   
 }
-ul>li:hover{
-    background-color: rgba(163, 157, 157, 0.61);
-
+.links:hover{
+    text-decoration: underline;
+    text-decoration-color: #152039;
+    text-underline-offset: 2px; 
+    
 }
 #menu li>ul{
     display: none;
@@ -120,10 +125,10 @@ th{
 
 /*estilos del footer div padre */
 .footer {
-    background-color: #494949;
+    background-color: #ff6341;
     width: 100%;
     font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
+    color: black;
     text-align: center;
 }
 .footer {
@@ -146,18 +151,25 @@ th{
     margin: 5px;
 }
 
+.parrafo {
+    color:black;
+}
+
 /* clase al parrafo de derechos reservados*/
   #tf   {
       color: #ffffff;
       text-align: center;
-      background-color: #494949;
+      background-color: #152039;
       width: 100%;
+      margin:0;
   }
+
+  
   /*desenfoque*/
-  .elementos:hover a{
+  .iconos:hover a{
       filter: blur(2px);
   }
-.elementos a:hover {
+.iconos a:hover {
     transform: translateY(-3px) scale(1.5);
     filter: none;
 }
@@ -206,15 +218,16 @@ font-size: 17px;
     text-align: left;
 }
 .boton {
-    margin-top: 2px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    background-color: #9999bd;
+    background-color: #152039;
     border-radius: 5px;
     color: #ffffff;
     width: 90px;
+    border:1px solid white;
 }
 .boton:hover{
-    color: red;
+    color: #ff6341;
 }
 /*Estilos de la lista */
 ol {
@@ -269,10 +282,11 @@ ol li {
 .metodoPago{
     display: flex;
     justify-content: space-around;
-    background-color: #f1f1dd;
-    margin: 10px;
-    border-radius: 20px;
-    border: 1px solid rgb(196, 196, 189);
+    background-color: #ffffff;
+    /*border-radius: 20px;*/
+    border-radius: 6px;
+    width: 90%;
+    margin: 10px auto;
 }
 
 /* AQUI SE ESTA DANDO ESTILO AL HIJO METODO DE PAGO */
@@ -281,6 +295,7 @@ section div{
     align-items: center;
     padding: 5px 20px;
     margin: 10px;
+    
 }
 /* */
 section div i{
@@ -292,7 +307,7 @@ section div i{
 }
 /* AQUI SE ESTA DANDO ESTILO A LOS ICONOS DE ANCLE*/
 .metodo{
-    font-size: 300%;
+    font-size: 200%;
 }
 
 /* AQUI SE ESTA DANDO ESTILO AL INDEX TDC */
@@ -320,6 +335,12 @@ div p{
     color: rgb(130, 131, 133);
     padding: 5px;
 }
+
+div h2{
+    margin-left: 2px;
+    font-size: 22px;
+}
+
 div a{
     text-decoration: none;
 }
@@ -597,6 +618,10 @@ input {
 /* pagina de compra */
 /* icono carrito de compras*/
 
+.cc{
+    margin:12px;
+}
+
 @media (max-width: 625px) {
     .cc {
        display: none;
@@ -609,7 +634,7 @@ input {
     color: #f3e5e5;
 }
 .cc:hover{
-    color: #0000ff;
+    color: #1241a7;
 }
 
 /* item pagina de compra*/
@@ -657,10 +682,7 @@ span { /* Estilo del precio del producto*/
     padding:4px;
     border-radius: 13px;
 }
-input:hover{
-    color: #611616;
-    background-color: #494949;
-}
+
 @media (max-width: 625px) { /* Responsive de los botones*/
     .opciones {
        display: none;
