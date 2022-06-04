@@ -148,8 +148,15 @@ const productos = [
 let carrito=[]
 
 
+let carritoVacio= ()=>{
+    if(localStorage.getItem("Carrito")==null ) {
+        return true;
+    }
+}
+
+
 let Carrito= (producto) =>{
-    if(localStorage.getItem("Carrito")==null ) {  //Si el carrito esta vacio, cargamos el carrito         
+    if(carritoVacio()) {  //Si el carrito esta vacio, cargamos el carrito         
         console.log("carrito vacio")
         cargarCarrito(producto,carrito)
     }         
@@ -215,7 +222,10 @@ const generarCards= (productos)=>{
      productCard.addEventListener("click", (evento)=>{
         evento.preventDefault();
 
-
+        if(!carritoVacio()){
+             carrito=JSON.parse(localStorage.getItem("Carrito")); //cargamos los datos en el carrito
+        }
+      
         if(!carritoSinRepetidos(producto)){
             Carrito(producto)
             console.log(carritoSinRepetidos(producto))
