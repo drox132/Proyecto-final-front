@@ -12,8 +12,10 @@ let productos= JSON.parse(localStorage.getItem("Carrito"));
 
 const generarCards= (productos)=>{
     let cards= document.querySelector(".cards");
-    productos.forEach(producto => {
 
+    let precio=0;
+    productos.forEach(producto => {
+        precio+= producto.precio;
         let cardProducto=document.createElement("div");
         cardProducto.className="card p-3" ;
         
@@ -21,7 +23,7 @@ const generarCards= (productos)=>{
              let cardPlantilla =
          `
             <div class="contenedor-img d-flex align-content-center">
-            <img src="../${producto.img}" class="cardImg d-block m-auto " alt="..." >
+            <img src="../${producto.img}" class="cardImg d-block m-auto" alt="..." >
             </div>
             <div class="cardBody">
                 <h5> ${producto.precio}</h5>
@@ -56,6 +58,11 @@ const generarCards= (productos)=>{
        
     
     });   
+
+    let a=document.createElement("div");
+    a.className="precio" ;
+    a.innerHTML=(`<div class="ja"><h1> Precio total = ${precio} </h1></div>`)
+    cards.appendChild(a)
 } 
 
 
